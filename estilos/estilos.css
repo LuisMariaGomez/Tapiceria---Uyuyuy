@@ -1,0 +1,770 @@
+*{
+    padding: 0;
+    margin: 0;
+} 
+
+/* Separadores */
+.separadores{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+
+    width: 100%;
+
+    backdrop-filter: blur(0.4rem); /* propiedad blur*/
+    -webkit-backdrop-filter: blur(0.4rem); /*da la compatibilidad*/
+    background-color: rgba(0, 0, 0, 0.547);
+
+    font-family: 'Playfair Display SC', serif;
+    font-size: .8rem;
+}
+.textos_separadores{
+    color: #978831;
+}
+#separador_redes_contacto{
+    font-size: .8rem;
+}
+/* Separadores */
+
+/* intro */
+
+#section_logo{
+    height: 100vh;
+
+    background-color: black;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+}
+#logo{
+    width: 80%;
+}
+#scroll{
+    position: absolute;
+    height: 10%;
+    bottom: 0px;
+}
+
+/* intro */
+
+/* Quienes somos */
+#contenedor_qs{
+    height: 100vh;
+
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)),
+    url("../imagenes/quienes_somos.jpg");
+    background-size: cover;
+    background-position: -400 0;
+
+    display: flex;
+    flex-direction: column;
+
+    color: white;
+
+    text-align: center;
+
+    justify-content: center;
+    align-items: center;
+}
+
+#titulo_quienes{
+    font-family: 'Playfair Display SC', serif;
+    font-size: 2rem;
+}
+
+#descripcion_quienes{
+    font-family: 'Playfair Display', serif;
+    width: 80%;
+    margin-top: 2rem;
+    text-shadow: 10px 10px 40px #000;
+    font-size: 1rem;
+}
+
+/* Quienes somos */
+
+/* Servicios */
+
+#fondo_servicios{
+    background-image: url(../imagenes/fondo_para_blur.jpg);
+    background-size: cover;
+    padding-top: 5rem;
+
+    display: flex;
+    flex-direction: column;
+
+
+    align-items: center;
+}
+.trabajos{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    border: 1px solid #978831; /* Complementa el efecto de sombra*/
+
+    height: 30%;
+    width: 90%;
+
+    border-radius: 20px;
+
+    margin-bottom: 2rem;
+
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.blur{
+    backdrop-filter: blur(0.4rem); /* propiedad blur*/
+    -webkit-backdrop-filter: blur(0.4rem); /*da la compatibilidad*/
+    background-color: rgba(0, 0, 0, 0.568);
+    
+}
+.img_trabajos{
+    border-radius: 20px;
+    height: auto;
+    width: 80%;
+
+    margin-top: 1rem;
+}
+.texto_trabajos{
+    margin-top: 1rem;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+.texto_trabajos > h3{
+    color: white;
+
+    font-family: 'Playfair Display SC', serif;
+
+    font-size: 2.5rem;
+}
+.texto_trabajos > h4{
+    color: white;
+
+    margin-top: 1rem;
+
+    width: 80%;
+    text-align: center;
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 1rem;
+}
+/* Servicios */
+
+/* lineas de mueble */
+#lineas_de_muebles{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    background: linear-gradient(to left, rgba(0, 0, 0, .5),rgba(0,0,0,.5),rgba(0,0,0,.5)),
+    url(../imagenes/fondo_maderas.jpg);
+
+    padding-top: 5rem;
+}
+.muebles_lineas{
+    width: 85%;
+    height: 90%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    backdrop-filter: blur(0.4rem); /* propiedad blur*/
+    -webkit-backdrop-filter: blur(0.4rem); /*da la compatibilidad*/
+    background-color: rgba(0, 0, 0, 0.39);
+
+    border: 1px solid #978831; /* Complementa el efecto de sombra*/
+    border-radius: 20px;
+
+    padding-bottom: 1rem;
+    padding-top: 2.5rem;
+
+    margin-bottom: 2rem;
+}
+.linea_hogar_img{
+    height: auto;
+    width: 75%;
+
+    border-radius: 20px;
+}
+.texto_y_titulo_lineas{
+    margin-top: 1rem;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+.texto_y_titulo_lineas > h3{
+    color: white;
+
+    font-family: 'Playfair Display SC', serif;
+
+    font-size: 2.2rem;
+}
+.texto_y_titulo_lineas > h4{
+    color: white;
+
+    margin-top: 1rem;
+
+    width: 85%;
+    text-align: center;
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 1rem;
+}
+#titulo_mueble{
+    font-size: 2.2rem;
+}
+/* lineas de mueble */
+
+/* Fotos */
+#seccion_linea_fotos{
+    display: none;
+}
+.scrolling-wrapper {
+    background: linear-gradient(to left, rgba(0, 0, 0, .5),rgba(0,0,0,.5),rgba(0,0,0,.5)),
+    url(../imagenes/fondo_maderas.jpg);
+
+    white-space: nowrap;
+    overflow-y: hidden;
+    padding-left: 1rem;
+    
+}
+  
+.card {
+    display: inline-block;
+
+    margin-right: 2rem;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    
+}
+.fotos{
+    height: 350px;
+    border-radius: 20px;
+
+    border: 1px solid #978831; /* Complementa el efecto de sombra*/
+    box-shadow: 0 10px 20px #000; /*Da el efecto de sombraa*/
+
+}
+#cont_swipe{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+#swipe{
+    height: 4rem;
+    padding-right: 2rem;
+}
+
+/* Fotos */
+
+/* Direccion y horarios*/
+#separador_direccion{
+    font-size: 1.5rem;
+}
+#horario_direccion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(to left, rgba(0, 0, 0, .5),rgba(0,0,0,.5),rgba(0,0,0,.5)),
+     url(../imagenes/fondo_maderas.jpg);
+
+    padding-top: 3rem;
+
+}
+.contenedores_horarios_direccion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    backdrop-filter: blur(0.4rem); /* propiedad blur*/
+    -webkit-backdrop-filter: blur(0.4rem); /*da la compatibilidad*/
+    background-color: rgba(0, 0, 0, 0.514);
+    border: 1px solid #978831; /* Complementa el efecto de sombra*/
+    box-shadow: 0 10px 20px #000; /*Da el efecto de sombraa*/
+    border-radius: 20px;
+
+    width: 80%;
+
+    margin-bottom: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    color: white;
+    font-family: 'Playfair Display SC', serif;
+
+}
+.contenedores_horarios_direccion > h4{
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.3rem;
+}
+.contenedores_horarios_direccion > img{
+    width: 60%;
+    height: auto;
+}
+.imagen_hyd{
+    height: auto;
+    width: 60%;
+}
+/* Direccion y horarios*/
+
+/* redes */
+#redes_contactos{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    background: linear-gradient(to left, rgba(0, 0, 0, .5),rgba(0,0,0,.5),rgba(0,0,0,.5)),
+    url(../imagenes/fondo_maderas.jpg);
+
+    padding-top: 4rem;
+}
+.seccion_redes_contactos{
+    display: flex;
+    justify-content: space-around;
+
+    width: 90%;
+    height: 30%;
+
+    backdrop-filter: blur(0.4rem); /* propiedad blur*/
+    -webkit-backdrop-filter: blur(0.4rem); /*da la compatibilidad*/
+    background-color: rgba(0, 0, 0, 0.514);
+    border: 1px solid #978831; /* Complementa el efecto de sombra*/
+    box-shadow: 0 10px 20px #000; /*Da el efecto de sombraa*/
+    border-radius: 20px;
+
+    margin-bottom: 1.5rem;
+}
+.redes{
+    height: 100%;
+    margin-top: .8rem;
+    margin-bottom: .8rem;
+}
+.imagenes_contacto{
+    height: 40px;
+    width: auto;
+}
+
+#redes_contactos2{
+    display: none;
+}
+
+/* redes */
+
+/* Displays */
+.display_none_mobile{   
+    display: none;
+}
+/* Displays */
+
+@media screen and (min-width: 1280px) {
+
+    /* logo */
+    #logo{
+        width: 50%;
+    }
+    /* logo */
+    /* Separadores */
+    .separadores{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        position: absolute;
+
+        width: 100%;
+
+        backdrop-filter: blur(0.4rem); /* propiedad blur*/
+        -webkit-backdrop-filter: blur(0.4rem); /*da la compatibilidad*/
+        background-color: rgba(0, 0, 0, 0.72);
+
+        font-family: 'Playfair Display SC', serif;
+        font-size: 1.2rem;
+    }
+    .textos_separadores{
+        color: #978831;
+    }
+    #separador_redes_contacto{
+        font-size: 1.2rem;
+    }
+    #separador_direccion{
+        font-size: 1.2rem;
+    }
+    /* Separadores */
+
+    /* Quienes somos? */
+    #titulo_quienes{
+        font-family: 'Playfair Display SC', serif;
+        font-size: 3rem;
+    }
+    #descripcion_quienes{
+        font-family: 'Playfair Display', serif;
+        width: 80%;
+        margin-top: 1,7rem;
+        text-shadow: 10px 10px 40px #000000;
+        font-size: 2rem;
+    }
+
+    /* Quienes somos? */
+
+    /* Servicios */
+    #fondo_servicios{
+        padding-top: 6rem;
+        padding-bottom: 3rem;
+
+        height: 100vh;
+    }
+    .trabajos{
+        display: flex;
+        flex-direction: row;
+
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        border: 1px solid #978831; /* Complementa el efecto de sombra*/
+
+        height: 30%;
+        width: 93%;
+
+        border-radius: 20px;
+
+        margin-bottom: 2rem;
+
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    .img_trabajos{
+        border-radius: 100%;
+        height: auto;
+        width: 25%;
+
+        margin-top: 0rem;
+        margin-left: 2.5rem;
+    }
+    .texto_trabajos{
+        margin-top: 0rem;
+    
+        display: flex;
+        flex-direction: column;
+    
+        align-items:flex-start;
+    }
+    .texto_trabajos > h3{
+        font-size: 4rem;
+        margin-left: 5rem;
+    }
+    .texto_trabajos > h4{
+        margin-top: .5rem;
+
+        text-align:left;
+    
+        font-family: 'Playfair Display', serif;
+    
+        font-size: 2rem;
+
+        margin-left: 5rem;
+    }
+    #restauracion{
+        margin-right: 4rem;
+        margin-left: 0rem;
+    }
+    /* Servicios */
+
+    /* lineas de muebles */
+    #lineas_de_muebles{
+        display: grid;
+        grid-template-areas:
+        "hogar comercio"
+        "restauracion tapiceria" ;
+
+        grid-template-columns: repeat(2.1fr);
+        grid-template-rows: repeat(2,1fr);
+
+        text-align: center;
+    
+        background: linear-gradient(to left, rgba(0, 0, 0, .5),rgba(0,0,0,.5),rgba(0,0,0,.5)),
+        url(../imagenes/fondo_maderas.jpg);
+    
+        padding-top: 6rem;
+    }
+    #hogar{
+        grid-area: hogar;
+        align-self: center;
+        justify-self: center;
+    }
+    #comercio{
+        grid-area: comercio;
+        align-self: center;
+        justify-self: center;
+    }
+    #restauracionn{
+        grid-area: restauracion;
+        align-self: center;
+        justify-self: center;
+    }
+    #tapiceriaa{
+        grid-area: tapiceria;
+        align-self: center;
+        justify-self: center;
+    }
+    .muebles_lineas{ /*no toque nada*/
+        width: 85%;
+        height: 90%;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        backdrop-filter: blur(0.4rem); /* propiedad blur*/
+        -webkit-backdrop-filter: blur(0.4rem); /*da la compatibilidad*/
+        background-color: rgba(0, 0, 0, 0.39);
+    
+        border: 1px solid #978831; /* Complementa el efecto de sombra*/
+        border-radius: 20px;
+    
+        padding-bottom: .2rem;
+        padding-top: 2rem;
+    
+    }
+    .linea_hogar_img{
+        height: 55%;
+    
+        border-radius: 20px;
+    }
+    .texto_y_titulo_lineas > h3{
+        color: #978831;
+    
+        font-family: 'Playfair Display SC', serif;
+    
+        font-size: 2.5rem;
+    }
+    .texto_y_titulo_lineas > h4{
+        color: white;
+    
+        margin-top: 1rem;
+    
+        width: 85%;
+        text-align: center;
+    
+        font-family: 'Playfair Display', serif;
+    
+        font-size: 1.5rem;
+    }
+    /*
+    .muebles_lineas2{
+        width: 64%;
+        margin-top: 1.4rem;
+    }
+    */
+    /* lineas de muebles */
+
+    /* FOTOS */
+    #seccion_linea_fotos{
+        display: flex;
+        flex-wrap:wrap;
+
+        justify-content: space-around;
+
+        background: linear-gradient(to left, rgba(0, 0, 0, .5),rgba(0,0,0,.5),rgba(0,0,0,.5)),
+        url(../imagenes/fondo_maderas.jpg);
+    
+        padding-top: 6rem;
+    }
+    .fotos{
+        width: 28%;
+        height: auto;
+        
+        margin-bottom: 4rem;
+    }
+    #swipe{
+        display: none;
+    }
+    /* FOTOS */
+
+    /* Direccion y horarios*/
+    #horario_direccion{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        padding-top: 10rem;
+        padding-bottom: 5rem;
+
+        height: 80vh;
+    }
+    .contenedores_horarios_direccion{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        backdrop-filter: blur(0.4rem); /* propiedad blur*/
+        -webkit-backdrop-filter: blur(0.4rem); /*da la compatibilidad*/
+        background-color: rgba(0, 0, 0, 0.514);
+        border: 1px solid #978831; /* Complementa el efecto de sombra*/
+        box-shadow: 0 10px 20px #000; /*Da el efecto de sombraa*/
+        border-radius: 60px;
+    
+        width: auto;
+        height: 90%;
+    
+        margin-bottom: 2rem;
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+    
+        color: white;
+        font-family: 'Playfair Display SC', serif;
+    }    
+    .contenedores_horarios_direccion:hover{
+        background-color: rgba(0, 0, 0, 0.806);
+        transition: 1s;
+    }
+    .contenedores_horarios_direccion > h3{
+        display: block;
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 3rem;
+    }
+    .contenedores_horarios_direccion > h4{
+        margin-top: 2rem;
+        text-align: center;
+        font-size: 2rem;
+        margin-top: 5rem;
+    }
+    .contenedores_horarios_direccion > img{
+        width: auto;
+        height: 70%;
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+
+    /* Direccion y horarios*/
+/* Redes */
+#redes_contactos{
+    padding-top: 8rem;
+}
+.seccion_redes_contactos{
+    display: flex;
+    justify-content: space-around;
+
+    width: 90%;
+    height: 50%;
+
+    backdrop-filter: blur(0.4rem); /* propiedad blur*/
+    -webkit-backdrop-filter: blur(0.4rem); /*da la compatibilidad*/
+    background-color: rgba(0, 0, 0, 0.514);
+    border: 1px solid #978831; /* Complementa el efecto de sombra*/
+    box-shadow: 0 10px 20px #000; /*Da el efecto de sombraa*/
+    border-radius: 20px;
+
+    margin-bottom: 4rem;
+}
+.redes{
+    height: 100%;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.imagenes_contacto{
+    height: 110px;
+    width: auto;
+}
+/* Redes desk */
+#redes_contactos{
+    display: none;
+}
+
+#redes_contactos2{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    background: linear-gradient(to left, rgba(0, 0, 0, .5),rgba(0,0,0,.5),rgba(0,0,0,.5)),
+    url(../imagenes/fondo_maderas.jpg);
+
+    padding-top: 4rem;
+}
+.seccion_redes_contactos2{
+    display: flex;
+    justify-content: space-around;
+
+    width: 70%;
+    height: 30%;
+
+    backdrop-filter: blur(0.4rem); /* propiedad blur*/
+    -webkit-backdrop-filter: blur(0.4rem); /*da la compatibilidad*/
+    background-color: rgba(0, 0, 0, 0.514);
+    border: 1px solid #978831; /* Complementa el efecto de sombra*/
+    box-shadow: 0 10px 20px #000; /*Da el efecto de sombraa*/
+    border-radius: 20px;
+
+    margin-bottom: 1.5rem;
+
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.redes2{
+    height: 100%;
+}
+.imagenes_contacto2{
+    height: 50px;
+}
+
+.absolute{
+    position: absolute;
+    z-index: 2;
+}
+.en_hover_no_display{
+    z-index: 1;
+    transition: 1s;
+}
+.en_hover_no_display:hover{
+    opacity: 0;
+    transition: .5s;
+}
+.link{
+    height: 100px;
+}
+/* Redes desk */
+
+
+
+
+
+
+
+
+
+    /*Sacar el display en desk*/
+    .no_display_desk{
+        display: none;
+    }
+    /*Sacar el display en desk*/
+}
